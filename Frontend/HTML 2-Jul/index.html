@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <title>ShopKart</title>
+</head>
+
+<body>
+    <header>
+        <!-- TOP BAR -->
+        <div class="bg-[#1a1a1a]">
+            <div class="w-[90%] sm:w-10/12 mx-auto relative">
+
+                <div class="flex justify-between items-center poppins text-[#626262] py-4">
+
+                    <div class="flex items-center gap-2">
+                        <img src="assets/images/truck.png" alt="Delivery" class="sm:h-5 h-3 w-5 sm:w-8 aspect-square ">
+                        <span class="text-[10px] sm:text-[16px]">Free Delivery | Return Policy</span>
+                    </div>
+
+                    <div class="flex gap-3 sm:gap-8 items-center">
+                        <span class="text-[10px] sm:text-[16px]">Login</span>
+                        <span class="hidden sm:block ">Follow Us</span>
+
+                        <div class="flex gap-3 items-center">
+                            <img src="assets/images/facebook.png" alt="Facebook" class="h-3 sm:h-4 w-auto">
+                            <img src="assets/images/linkedin.png" alt="LinkedIn" class="h-3 sm:h-4 w-auto">
+                            <img src="assets/images/twitter.png" alt="Twitter" class="h-3 sm:h-4 w-auto">
+                            <img src="assets/images/insta.png" alt="Instagram" class="h-3 sm:h-4 w-auto">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- MAIN HEADER -->
+        <section class="bg-black">
+            <div class="w-[90%] sm:w-10/12 mx-auto text-white">
+
+                <div class="flex justify-between items-baseline pt-6">
+
+                    <h1 class="poppins-elight text-[30px] sm:text-[40px]">
+                        ShopKart
+                    </h1>
+
+                    <div class="hidden sm:block work-sans text-[14px] uppercase">
+                        Wishlist (0) &nbsp;&nbsp; Bag (0)
+                    </div>
+
+                    <button class="block sm:hidden">
+                        <img src="assets/images/burger-button.svg" alt="burger button">
+                    </button>
+
+                </div>
+
+                <div class="relative">
+                    <hr class="border-[#ffffff] ">
+                    <img src="assets/images/star1.png" alt="star png"
+                        class="hidden sm:block absolute w-[22px] left-[23%] -top-[11px]">
+                </div>
+
+                <!-- NAVIGATION -->
+                <nav class="hidden sm:block work-sans uppercase text-[18px] py-6">
+                    <ul class="flex justify-around w-1/2">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Our Products</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </section>
+
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="bg-black text-white relative">
+            <div
+                class="sm:w-10/12 mx-auto relative flex flex-col-reverse sm:flex-row sm:justify-between overflow-x-hidden sm:overflow-x-visible">
+
+                <div class="z-30 absolute sm:static bottom-36 left-6">
+                    <h2 class="hero-text sm:mt-36 leading-none text-[50px] sm:text-[135px]">
+                        Fresh <br>
+                        <span class="ml-[35%] sm:ml-[60%] text-transparent [-webkit-text-stroke:2px_white]">2022</span>
+                        <br>
+                        <span class="ml-[10%] sm:ml-16">Look</span>
+                    </h2>
+                </div>
+
+                <div class="sm:mr-22 relative z-10 left-24 sm:left-0 overflow-x-hidden sm:overflow-x-visible">
+                    <img src="assets/images/hero-man.png" alt="Man in jacket"
+                        class="relative z-10 object-cover w-[500px]">
+                    <p
+                        class="hidden sm:block absolute -right-28 bottom-[20%] z-10 text-black work-sans uppercase">
+                        Oregon jacket <br>
+                        $124
+                    </p>
+                    <img src="assets/images/star3.svg" alt="star png" class="absolute top-0 right-0">
+                </div>
+
+                <div
+                    class="h-[58%] sm:h-[58%] w-full sm:w-[84%] bg-[#F07E15] absolute sm:-right-[10%] bottom-[10%] opacity-20 z-20">
+                </div>
+                <div
+                    class="h-[58%] sm:h-[58%] w-[120%] sm:w-[84%] bg-[#F07E15] absolute sm:-right-[10%] bottom-[10%] z-0">
+                </div>
+
+            </div>
+            <div class="absolute h-px bg-white w-[70%] ml-0 bottom-[17%] z-40">
+                <img src="assets/images/star4.svg" alt="star svg" class="absolute right-0 -top-[45px] z-40">
+            </div>
+            <p class="absolute bottom-4 left-3 sm:bottom-16 sm:left-52 flex items-baseline gap-2 border-b">
+                See more
+                <img src="assets/images/arrow.svg" alt="arrow">
+            </p>
+        </section>
+
+        <!-- New Products Section -->
+        <section class="pl-[8%] my-20">
+            <!-- Heading -->
+            <div class="relative">
+                <h2 class="border-b border-black w-max syne text-4xl sm:text-8xl font-semibold">New Products</h2>
+                <img src="assets/images/star2.svg" alt="star svg" class="absolute left-0 -bottom-[10px]">
+            </div>
+
+            <div class="flex flex-col sm:flex-row mt-10">
+                <!-- Menu bar -->
+                <div class=" sm:w-[20%] work-sans py-10">
+                    <ul class="text-sm sm:text-[20px] flex flex-row sm:flex-col gap-2">
+                        <li><a href="#">Apparel</a></li>
+                        <li class="text-[18px] sm:text-[26px] font-semibold"><a href="#">Accessories</a></li>
+                        <li><a href="#">Best sellers</a></li>
+                        <li><a href="#">50% off</a></li>
+                    </ul>
+                </div>
+
+                <!-- Product Cards -->
+                <div class="flex sm:w-[80%] gap-6 overflow-auto scrollbar-thin">
+                    <div class="w-[350px] shrink-0 h-full">
+                        <div class="relative  h-[350px]">
+                            <img src="assets/images/newproduct-1.jpg" alt="product 1"
+                                class="w-full h-full object-cover">
+                            <div class="absolute right-0 bottom-0">
+                                <img src="assets/images/right-top-arrow.svg" alt="right top arrow">
+                            </div>
+                        </div>
+                        <div class="p-2">
+                            <p class="syne font-semibold text-[26px]">FLORIDA JACKET</p>
+                            <p class="work-sans test-[14px] text-[#16161580]">Suffered alteration in some form,
+                                bysuffalterattion in some forme, byinjected humor, or randomised</p>
+                            <p class="syne font-semibold text-[26px]">$100</p>
+                        </div>
+                    </div>
+                    <div class="w-[350px] shrink-0 h-[70%]">
+                        <div class="relative  h-[350px]">
+                            <img src="assets/images/newproduct-2.jpg" alt="product 1"
+                                class="w-full h-full object-cover">
+                            <div class="absolute right-0 bottom-0">
+                                <img src="assets/images/right-top-arrow.svg" alt="right top arrow">
+                            </div>
+                        </div>
+                        <div class="p-2">
+                            <p class="syne font-semibold text-[26px]">FLORIDA JACKET</p>
+                            <p class="work-sans test-[14px] text-[#16161580]">Suffered alteration in some form,
+                                bysuffalterattion in some forme, byinjected humor, or randomised</p>
+                            <p class="syne font-semibold text-[26px]">$100</p>
+                        </div>
+                    </div>
+                    <div class="w-[350px] shrink-0">
+                        <div class="relative  h-[350px]">
+                            <img src="assets/images/newproduct-3.jpg" alt="product 1"
+                                class="w-full h-full object-cover">
+                            <div class="absolute right-0 bottom-0">
+                                <img src="assets/images/right-top-arrow.svg" alt="right top arrow">
+                            </div>
+                        </div>
+                        <div class="p-2">
+                            <p class="syne font-semibold text-[26px]">FLORIDA JACKET</p>
+                            <p class="work-sans test-[14px] text-[#16161580]">Suffered alteration in some form,
+                                bysuffalterattion in some forme, byinjected humor, or randomised</p>
+                            <p class="syne font-semibold text-[26px]">$100</p>
+                        </div>
+                    </div>
+                    <div class="w-[350px] shrink-0">
+                        <div class="relative  h-[350px]">
+                            <img src="assets/images/newproduct-4.jpg" alt="product 1"
+                                class="w-full h-full object-cover">
+                            <div class="absolute right-0 bottom-0">
+                                <img src="assets/images/right-top-arrow.svg" alt="right top arrow">
+                            </div>
+                        </div>
+                        <div class="p-2">
+                            <p class="syne font-semibold text-[26px]">FLORIDA JACKET</p>
+                            <p class="work-sans test-[14px] text-[#16161580]">Suffered alteration in some form,
+                                bysuffalterattion in some forme, byinjected humor, or randomised</p>
+                            <p class="syne font-semibold text-[26px]">$100</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Products -->
+        <section class="mt-20 bg-black text-white py-16">
+            <div class="w-[90%] sm:w-10/12 mx-auto">
+                <!-- Heading -->
+                <div class="relative">
+                    <h2 class="border-b border-black w-max syne text-4xl sm:text-8xl font-semibold">Featured Products</h2>
+                    <img src="assets/images/star2.svg" alt="star svg" class="absolute left-0 -bottom-[10px]">
+                </div>
+
+                <!-- Cards -->
+                <div class="columns-4 gap-6 justify-between mt-10">
+                    <div class="w-[350px] shrink-0 h-full">
+                        <div class="relative  h-[350px]">
+                            <img src="assets/images/newproduct-1.jpg" alt="product 1"
+                                class="w-full h-full object-cover">
+                            <div class="absolute right-0 bottom-0">
+                                <img src="assets/images/right-top-arrow.svg" alt="right top arrow">
+                            </div>
+                        </div>
+                        <div class="p-2">
+                            <p class="syne font-semibold text-[26px]">FLORIDA JACKET</p>
+                            <p class="work-sans test-[14px] text-gray-500">Suffered alteration in some form,
+                                bysuffalterattion in some forme, byinjected humor, or randomised</p>
+                            <p class="syne font-semibold text-[26px]">$100</p>
+                        </div>
+                    </div>
+                    <div class="w-[350px] shrink-0 h-[70%]">
+                        <div class="relative  h-[350px]">
+                            <img src="assets/images/newproduct-2.jpg" alt="product 1"
+                                class="w-full h-full object-cover">
+                            <div class="absolute right-0 bottom-0">
+                                <img src="assets/images/right-top-arrow.svg" alt="right top arrow">
+                            </div>
+                        </div>
+                        <div class="p-2">
+                            <p class="syne font-semibold text-[26px]">FLORIDA JACKET</p>
+                            <p class="work-sans test-[14px] text-gray-500">Suffered alteration in some form,
+                                bysuffalterattion in some forme, byinjected humor, or randomised</p>
+                            <p class="syne font-semibold text-[26px]">$100</p>
+                        </div>
+                    </div>
+                    <div class="w-[350px] shrink-0">
+                        <div class="relative  h-[350px]">
+                            <img src="assets/images/newproduct-3.jpg" alt="product 1"
+                                class="w-full h-full object-cover">
+                            <div class="absolute right-0 bottom-0">
+                                <img src="assets/images/right-top-arrow.svg" alt="right top arrow">
+                            </div>
+                        </div>
+                        <div class="p-2">
+                            <p class="syne font-semibold text-[26px]">FLORIDA JACKET</p>
+                            <p class="work-sans test-[14px] text-gray-500">Suffered alteration in some form,
+                                bysuffalterattion in some forme, byinjected humor, or randomised</p>
+                            <p class="syne font-semibold text-[26px]">$100</p>
+                        </div>
+                    </div>
+                    <div class="w-[350px] shrink-0">
+                        <div class="relative  h-[350px]">
+                            <img src="assets/images/newproduct-4.jpg" alt="product 1"
+                                class="w-full h-full object-cover">
+                            <div class="absolute right-0 bottom-0">
+                                <img src="assets/images/right-top-arrow.svg" alt="right top arrow">
+                            </div>
+                        </div>
+                        <div class="p-2">
+                            <p class="syne font-semibold text-[26px]">FLORIDA JACKET</p>
+                            <p class="work-sans test-[14px] text-gray-500">Suffered alteration in some form,
+                                bysuffalterattion in some forme, byinjected humor, or randomised</p>
+                            <p class="syne font-semibold text-[26px]">$100</p>
+                        </div>
+                    </div>
+                    <div class="w-[350px] shrink-0 h-full">
+                        <div class="relative  h-[350px]">
+                            <img src="assets/images/newproduct-1.jpg" alt="product 1"
+                                class="w-full h-full object-cover">
+                            <div class="absolute right-0 bottom-0">
+                                <img src="assets/images/right-top-arrow.svg" alt="right top arrow">
+                            </div>
+                        </div>
+                        <div class="p-2">
+                            <p class="syne font-semibold text-[26px]">FLORIDA JACKET</p>
+                            <p class="work-sans test-[14px] text-gray-500">Suffered alteration in some form,
+                                bysuffalterattion in some forme, byinjected humor, or randomised</p>
+                            <p class="syne font-semibold text-[26px]">$100</p>
+                        </div>
+                    </div>
+                    <div class="w-[350px] shrink-0 h-[70%]">
+                        <div class="relative  h-[350px]">
+                            <img src="assets/images/newproduct-2.jpg" alt="product 1"
+                                class="w-full h-full object-cover">
+                            <div class="absolute right-0 bottom-0">
+                                <img src="assets/images/right-top-arrow.svg" alt="right top arrow">
+                            </div>
+                        </div>
+                        <div class="p-2">
+                            <p class="syne font-semibold text-[26px]">FLORIDA JACKET</p>
+                            <p class="work-sans test-[14px] text-gray-500">Suffered alteration in some form,
+                                bysuffalterattion in some forme, byinjected humor, or randomised</p>
+                            <p class="syne font-semibold text-[26px]">$100</p>
+                        </div>
+                    </div>
+                    <div class="w-[350px] shrink-0">
+                        <div class="relative  h-[350px]">
+                            <img src="assets/images/newproduct-3.jpg" alt="product 1"
+                                class="w-full h-full object-cover">
+                            <div class="absolute right-0 bottom-0">
+                                <img src="assets/images/right-top-arrow.svg" alt="right top arrow">
+                            </div>
+                        </div>
+                        <div class="p-2">
+                            <p class="syne font-semibold text-[26px]">FLORIDA JACKET</p>
+                            <p class="work-sans test-[14px] text-gray-500">Suffered alteration in some form,
+                                bysuffalterattion in some forme, byinjected humor, or randomised</p>
+                            <p class="syne font-semibold text-[26px]">$100</p>
+                        </div>
+                    </div>
+                    <div class="w-[350px] shrink-0">
+                        <div class="relative  h-[350px]">
+                            <img src="assets/images/newproduct-4.jpg" alt="product 1"
+                                class="w-full h-full object-cover">
+                            <div class="absolute right-0 bottom-0">
+                                <img src="assets/images/right-top-arrow.svg" alt="right top arrow">
+                            </div>
+                        </div>
+                        <div class="p-2">
+                            <p class="syne font-semibold text-[26px]">FLORIDA JACKET</p>
+                            <p class="work-sans test-[14px] text-gray-500">Suffered alteration in some form,
+                                bysuffalterattion in some forme, byinjected humor, or randomised</p>
+                            <p class="syne font-semibold text-[26px]">$100</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bottom Section -->
+        <section class="relative bg-[url('/assets/images/contact-section-bg.png')] w-full bg-cover backdrop-grayscale">
+            <div class="absolute h-full w-full backdrop-grayscale"></div>
+            <div class="absolute h-full w-full bg-black opacity-40 -z-10"></div>
+            <div class="w-[90%] sm:w-10/12 mx-auto z-50">
+                <div class="flex flex-col sm:flex-row justify-between pt-24 z-50">
+                    <div class="sm:w-[45%] z-50">
+                        <h3 class="syne text-center sm:text-left font-semibold text-3xl text-white opacity-50">Newslleter</h3>
+                        <p class="work-sans text-center sm:text-left text-lg text-white opacity-50 sm:w-[60%]">Get news about articles and updates in your inbox.</p>
+                    </div>
+
+                    <form class="sm:w-[55%] flex flex-col gap-3 relative">
+                        <input type="text" placeholder="Name" 
+                            class="appearance-none
+                                outline-none
+                                bg-transparent
+                                shadow-none
+                                ring-0
+                                focus:ring-0
+                                focus:outline-none work-sans text-lg uppercase
+                                border-b-2 border-solid border-white p-2 sm:w-[75%] text-white"
+                        >
+                        <input type="email" placeholder="Email"
+                            class="appearance-none
+                                outline-none
+                                bg-transparent
+                                shadow-none
+                                ring-0
+                                focus:ring-0
+                                focus:outline-none work-sans text-lg uppercase
+                                border-b-2 border-solid border-white p-2 sm:w-[75%] text-white"
+                        >
+                        <input type="text" placeholder="Message"
+                            class="appearance-none
+                                outline-none
+                                bg-transparent
+                                shadow-none
+                                ring-0
+                                focus:ring-0
+                                focus:outline-none work-sans text-lg uppercase
+                                border-b-2 border-solid border-white p-2 sm:w-[75%] text-white"
+                        >
+                        <div class="absolute right-0 bottom-[-86%] sm:right-12 sm:-bottom-[140%] border-2 border-[#F07E15] rounded-full h-24 w-24 sm:h-52 sm:w-52 flex justify-center items-center">
+                            <button class="uppercase work-sans text-2xl text-[#F07E15]">Send</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="syne py-14 font-extrabold text-[55px] sm:text-[170px] leading-[0.7] uppercase text-white">
+                    <h2 >Get</h2>
+                    <h2 >In Touch</h2>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+    <footer>
+        <p class="poppins bg-black text-center text-white text-xs p-6">Copyright 2022 All Right Reserved By SG</p>
+    </footer>
+</body>
+
+</html>

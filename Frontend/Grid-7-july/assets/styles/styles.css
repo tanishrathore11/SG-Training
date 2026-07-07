@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100vh;
+}
+
+.main-div{
+    width: 60%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:
+    minmax(80px, auto)
+    minmax(120px, auto)
+    minmax(80px, auto)
+    minmax(120px, auto)
+    minmax(80px, auto);
+    color: white;
+    background-color: #F7F8FC;
+    gap: 12px;
+
+    padding: 16px;
+    border-radius: 12px;
+    border: #C7CADC dashed;
+
+    height: 70%;
+
+    grid-template-areas: 
+    "box1 box1 box1"
+    "box2 box2 box3"
+    "box4 box5 box3"
+    "box6 box7 box8"
+    "box9 box9 box9"
+    ;
+    
+}
+
+.box{
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    padding: 16px;
+    border-radius: 12px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.box1{
+    /* grid-column: 1/-1; */
+    background-color: #6c63ff;
+    grid-area: box1;
+}
+
+.box2{
+    /* grid-column: span 2; */
+    background-color: #4a90d9;
+    grid-area: box2;
+}
+
+.box3{
+    /* grid-row: span 2; */
+    background-color: #e67e73;
+    grid-area: box3;
+}
+
+.box4{
+    background-color: #5cb85c ;
+    grid-area: box4;
+}
+
+.box5{
+    background-color: #f0ad4e;
+    grid-area: box5;
+}
+
+.box6{
+    background-color: #9B59B6;
+    grid-area: box6;
+}
+
+.box7{
+    background-color: #19BC9C;
+    grid-area: box7;
+}
+
+.box8{
+    background-color: #E74C3D;
+    grid-area: box8;
+}
+
+.box9{
+    /* grid-column: 1/-1; */
+    background-color: #2c3e50;
+    grid-area: box9;
+}
+
+.box6:hover,
+.box7:hover,
+.box8:hover{
+    transition: transform 0.3s ease;
+    transform: translateY(-4px);
+}
+
+@media screen and (max-width: 600px) {
+    .main-div{
+        width: 80%;
+        grid-template-columns: 1fr;
+
+        grid-template-areas: 
+            "box1"
+            "box2"
+            "box3"
+            "box4"
+            "box5"
+            "box6"
+            "box7"
+            "box8"
+            "box9"
+        ;
+    }
+    .box{
+        grid-column: auto;
+    }
+}
+
+
+
+
+
+
+.masonry-section {
+    width: 80%;
+    margin: 80px auto;
+}
+
+
+.masonry-grid {
+    columns: 3;
+    column-gap: 16px;
+}
+
+
+.masonry-box {
+    background-color: #000;
+    color: white;
+    padding: 20px;
+
+    margin-bottom: 16px;
+
+    border-radius: 12px;
+
+    break-inside: avoid;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 24px;
+}
+
+
+/* Different heights to show masonry effect */
+.masonry-box:nth-child(1) {
+    height: 180px;
+}
+
+.masonry-box:nth-child(2) {
+    height: 280px;
+}
+
+.masonry-box:nth-child(3) {
+    height: 140px;
+}
+
+.masonry-box:nth-child(4) {
+    height: 350px;
+}
+
+.masonry-box:nth-child(5) {
+    height: 220px;
+}
+
+.masonry-box:nth-child(6) {
+    height: 160px;
+}
+
+.masonry-box:nth-child(7) {
+    height: 300px;
+}
+
+.masonry-box:nth-child(8) {
+    height: 200px;
+}
+
+.masonry-box:nth-child(9) {
+    height: 250px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .masonry-grid {
+        columns: 1;
+    }
+}
