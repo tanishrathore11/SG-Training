@@ -1,0 +1,154 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#fcfcfc;
+}
+
+.team-page{
+    display:flex;
+    flex-direction:column;
+    padding:40px;
+}
+
+.team-header{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    flex-shrink:0;
+    margin-bottom:30px;
+    padding:20px;
+}
+
+.header-icon{
+    width:75px;
+    height:75px;
+    border-radius:18px;
+    background:#efecff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.header-icon img{
+    width:40px;
+    height:40px;
+    object-fit:cover;
+}
+
+.team-header h1{
+    font-size: 42px;
+    margin-bottom:8px;
+}
+
+.team-header p{
+    color:gray;
+    font-size: 18px;
+}
+
+.cards-section{
+    padding:20px;
+    overflow-y:auto;
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:34px;
+}
+
+
+.team-card{
+    background: white;
+    border-radius:18px;
+    padding:28px;
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+    align-items:center;
+    text-align:center;
+    box-shadow: 0 6px 18px rgba(0,0,0,.06);
+
+    transition:.3s;
+}
+
+.team-card:hover{
+    transform:translateY(-6px);
+}
+
+.team-img{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:20px;
+}
+
+.team-card h2{
+    margin-bottom:8px;
+}
+
+.team-card h3{
+    color:#7074FC;
+    margin-bottom:16px;
+}
+
+.team-card p{
+    color: gray;
+    width: 70%;
+}
+
+.socials{
+    display:flex;
+    gap:18px;
+    margin-top:25px;
+}
+
+.social-icon{
+    width:28px;
+    height:28px;
+    object-fit:cover;
+}
+
+.socials a{
+    width:48px;
+    height:48px;
+    border:1px solid #e4e4e4;
+    border-radius:12px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
+.cards-section::-webkit-scrollbar{
+    width:4px;
+}
+
+.cards-section::-webkit-scrollbar-thumb{
+    background:#c7c7c7;
+    border-radius:20px;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .cards-section {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .cards-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .cards-section {
+        grid-template-columns: 1fr;
+    }
+    .team-page{
+        padding:20px;
+    }
+}
