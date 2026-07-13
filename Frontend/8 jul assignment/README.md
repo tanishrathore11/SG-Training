@@ -1,8 +1,5 @@
 # Team Page
 
-## Overview
-A responsive Team Page built using **HTML** and **CSS Grid**.
-
 ## Why CSS Grid?
 - Used **CSS Grid** to create a clean and responsive card layout.
 - Makes it easy to change the number of columns for different screen sizes.
