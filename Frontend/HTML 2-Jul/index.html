@@ -13,24 +13,27 @@
     <header>
         <!-- TOP BAR -->
         <div class="bg-[#1a1a1a]">
-            <div class="w-[90%] sm:w-[calc(100%-180px)] mx-auto relative">
+            <div class="w-[90%] px-1 mx-auto relative">
 
-                <div class="flex justify-between items-center poppins text-[#626262] py-3">
+                <div class="flex justify-between items-center poppins text-[#626262] py-2">
 
                     <div class="flex items-center gap-2">
-                        <img src="assets/images/truck.png" alt="Delivery" class=" h-3 w-5 sm: aspect-square ">
-                        <span class="text-[10px] sm:text-[12px]">Free Delivery &nbsp;|&nbsp; Return Policy</span>
+                        <img src="assets/images/truck.png" alt="Delivery" class=" h-4 w-6 sm: aspect-square ">
+                        <div>
+                            <span class="text-[10px] sm:text-[12px] border-r border-[#626262] pr-3 py-0.5">Free Delivery</span>
+                            <span class="text-[10px] sm:text-[12px] pl-3">Return Policy</span>
+                        </div>
                     </div>
 
-                    <div class="text-[10px] sm:text-[12px] flex gap-3 sm:gap-8 items-center">
-                        <span class="">Login</span>
+                    <div class="text-[10px] flex gap-1 sm:gap-2 items-center">
+                        <span class="mr-8">Login</span>
                         <span class="hidden sm:block ">Follow Us</span>
 
-                        <div class="flex gap-3 items-center">
-                            <img src="assets/images/facebook.png" alt="Facebook" class="h-3 sm:h-4 w-auto">
-                            <img src="assets/images/linkedin.png" alt="LinkedIn" class="h-3 sm:h-4 w-auto">
-                            <img src="assets/images/twitter.png" alt="Twitter" class="h-3 sm:h-4 w-auto">
-                            <img src="assets/images/insta.png" alt="Instagram" class="h-3 sm:h-4 w-auto">
+                        <div class="flex gap-[11px] items-center">
+                            <img src="assets/images/facebook.png" alt="Facebook" class="h-2 w-auto">
+                            <img src="assets/images/linkedin.png" alt="LinkedIn" class="h-2 w-auto">
+                            <img src="assets/images/twitter.png" alt="Twitter" class="h-2 w-auto">
+                            <img src="assets/images/insta.png" alt="Instagram" class="h-2 w-auto">
                         </div>
                     </div>
 
@@ -40,17 +43,17 @@
         </div>
 
         <!-- MAIN HEADER -->
-        <section class="bg-black">
-            <div class="w-[90%] sm:w-[calc(100%-180px)] mx-auto text-white">
+        <section class="bg-black px-1">
+            <div class="w-[90%] mx-auto text-white">
 
-                <div class="flex justify-between items-baseline pt-6">
+                <div class="flex pt-1 justify-between items-baseline border-b border-[#ffffff]">
 
-                    <h1 class="poppins-elight text-[30px] sm:text-[40px]">
+                    <h1 class="poppins-elight text-[30px] p-1 sm:text-[40px] leading-[45px]">
                         ShopKart
                     </h1>
 
                     <div class="hidden sm:block work-sans text-[14px] uppercase">
-                        Wishlist (0) &nbsp;&nbsp; Bag (0)
+                        Wishlist (0)&nbsp;&nbsp;Bag (0)
                     </div>
 
                     <button class="block sm:hidden">
@@ -60,17 +63,16 @@
                 </div>
 
                 <div class="relative">
-                    <hr class="border-[#ffffff] ">
                     <img src="assets/images/star1.png" alt="star png"
-                        class="hidden sm:block absolute w-[22px] left-[23%] -top-[11px]">
+                        class="hidden sm:block absolute w-[22px] left-[27%] -top-[11px]">
                 </div>
 
                 <!-- NAVIGATION -->
-                <nav class="hidden sm:block work-sans uppercase text-[18px] py-6">
-                    <ul class="flex justify-around w-1/2">
+                <nav class="hidden sm:block work-sans uppercase text-[18px] py-4">
+                    <ul class="flex justify-between w-[56%]">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
-                        <li><a href="#">Our Products</a></li>
+                        <li class="border-b"><a href="#">Our Products</a></li>
                         <li><a href="#">Contact Us</a></li>
                     </ul>
                 </nav>
@@ -82,69 +84,68 @@
 
     <main>
         <!-- Hero Section -->
-        <section class="bg-black text-white relative overflow-x-hidden">
-            <div
-                class="sm:w-[calc(100%-180px)] mx-auto relative flex flex-col-reverse sm:flex-row sm:justify-between overflow-x-hidden sm:overflow-x-visible">
+        <section class="bg-black text-white relative overflow-x-hidden mt-[-1px]">
+            <div class=" w-[90%] px-1 mx-auto relative flex flex-col-reverse sm:flex-row sm:justify-between overflow-x-hidden sm:overflow-x-visible">
 
-                <div class="z-30 absolute sm:static bottom-36 left-6">
-                    <h2 class="hero-text sm:mt-36 leading-none text-[50px] sm:text-[135px]">
+                <div class="z-30 absolute sm:static bottom-36 h-fit">
+                    <h2 class="hero-text sm:mt-[120px] leading-[114px] text-[50px] sm:text-[135px]">
                         Fresh <br>
-                        <span class="ml-[35%] sm:ml-[60%] text-transparent [-webkit-text-stroke:2px_white]">2022</span>
+                        <span class="ml-[35%] sm:ml-[57%] text-transparent [-webkit-text-stroke:2px_white]">2026</span>
                         <br>
-                        <span class="ml-[10%] sm:ml-16">Look</span>
+                        <span class="ml-[10%] sm:ml-[106px]">Look</span>
                     </h2>
                 </div>
 
-                <div class="sm:mr-22 relative z-10 left-24 sm:left-0 overflow-x-hidden sm:overflow-x-visible">
+                <div class="sm:mr-22 relative z-10 left-24 sm:-left-28 top-[-20px] overflow-x-hidden sm:overflow-x-visible">
                     <img src="assets/images/hero-man.png" alt="Man in jacket"
-                        class="relative z-10 object-cover w-[500px]">
+                        class="relative z-10 object-cover w-[432px]">
                     <p
-                        class="hidden sm:block absolute -right-28 bottom-[20%] z-10 text-black work-sans uppercase">
+                        class="hidden sm:block text-[14px] absolute -right-28 bottom-[21%] z-10 text-black work-sans uppercase">
                         Oregon jacket <br>
                         $124
                     </p>
-                    <img src="assets/images/star3.svg" alt="star png" class="absolute top-0 right-0">
+                    <img src="assets/images/star3.svg" alt="star png" class="absolute top-0 -right-10 ">
                 </div>
 
                 <div
-                    class="h-[58%] sm:h-[58%] w-full sm:w-[84%] bg-[#F07E15] absolute sm:-right-[10%] bottom-[10%] opacity-20 z-20">
+                    class="h-[54%] sm:h-[54%] w-full sm:w-[82%] bg-[#F07E15] absolute sm:-right-[10%] bottom-[17%] opacity-20 z-20">
                 </div>
                 <div
-                    class="h-[58%] sm:h-[58%] w-[120%] sm:w-[84%] bg-[#F07E15] absolute sm:-right-[10%] bottom-[10%] z-0">
+                    class="h-[54%] sm:h-[54%] w-[120%] sm:w-[82%] bg-[#F07E15] absolute sm:-right-[10%] bottom-[17%] z-0">
                 </div>
 
             </div>
-            <div class="absolute h-px bg-white w-[70%] ml-0 bottom-[17%] z-40">
-                <img src="assets/images/star4.svg" alt="star svg" class="absolute right-0 -top-[45px] z-40">
+            <div class="absolute h-px bg-white w-[70%] ml-0 bottom-[22%] z-40">
+                <img src="assets/images/star4.svg" alt="star svg" class="absolute right-[6px] -top-[45px] z-40">
             </div>
-            <p class="absolute bottom-4 left-3 sm:bottom-16 sm:left-52 flex items-baseline gap-2 border-b">
+            <p class="absolute tracking-[1px] font-thin bottom-4 left-3 sm:bottom-[14%] sm:left-20 flex items-baseline gap-2 border-b text-[18px]">
                 See more
                 <img src="assets/images/arrow.svg" alt="arrow">
             </p>
         </section>
 
         <!-- New Products Section -->
-        <section class="pl-[8%] my-20">
+        <section class="pl-[5%] my-14">
             <!-- Heading -->
             <div class="relative">
-                <h2 class="border-b border-black w-max syne text-4xl sm:text-8xl font-semibold">New Products</h2>
-                <img src="assets/images/star2.svg" alt="star svg" class="absolute left-0 -bottom-[10px]">
+                <h2 class=" w-max syne sm:text-[90px] font-semibold underline decoration-1 underline-offset-[20px]">New products</h2>
+                <img src="assets/images/star2.svg" alt="star svg" class="absolute left-0 bottom-[8px]">
             </div>
 
-            <div class="flex flex-col sm:flex-row mt-10">
+            <div class="flex flex-col sm:flex-row ">
                 <!-- Menu bar -->
-                <div class=" sm:w-[20%] work-sans py-10">
-                    <ul class="text-sm sm:text-[20px] flex flex-row sm:flex-col gap-2">
+                <div class=" sm:w-[20%] work-sans py-5">
+                    <ul class="text-sm sm:text-[20px] flex flex-row sm:flex-col gap-[26px] text-[18px]">
                         <li><a href="#">Apparel</a></li>
-                        <li class="text-[18px] sm:text-[26px] font-semibold"><a href="#">Accessories</a></li>
+                        <li class="text-[18px] sm:text-[26px] syne font-semibold"><a href="#">Accessories</a></li>
                         <li><a href="#">Best sellers</a></li>
                         <li><a href="#">50% off</a></li>
                     </ul>
                 </div>
 
                 <!-- Product Cards -->
-                <div class="flex sm:w-[80%] gap-6 overflow-auto scrollbar-thin">
-                    <div class="w-[350px] shrink-0 h-full">
+                <div class="flex sm:w-[80%] gap-10 overflow-auto scrollbar-thin">
+                    <div class="w-[310px] shrink-0 h-full">
                         <div class="relative  h-[350px]">
                             <img src="assets/images/newproduct-1.jpg" alt="product 1"
                                 class="w-full h-full object-cover">
@@ -152,14 +153,14 @@
                                 <img src="assets/images/right-top-arrow.svg" alt="right top arrow">
                             </div>
                         </div>
-                        <div class="p-2">
+                        <div class="">
                             <p class="syne font-semibold text-[26px]">FLORIDA JACKET</p>
-                            <p class="work-sans test-[14px] text-[#16161580]">Suffered alteration in some form,
+                            <p class="work-sans text-[14px] text-[#16161580] leading-[16px]">Suffered alteration in some form,
                                 bysuffalterattion in some forme, byinjected humor, or randomised</p>
-                            <p class="syne font-semibold text-[26px]">$100</p>
+                            <p class="syne font-semibold text-[26px] mt-2">$100</p>
                         </div>
                     </div>
-                    <div class="w-[350px] shrink-0 h-[70%]">
+                    <div class="w-[310px] shrink-0 h-[70%]">
                         <div class="relative  h-[350px]">
                             <img src="assets/images/newproduct-2.jpg" alt="product 1"
                                 class="w-full h-full object-cover">
@@ -167,14 +168,14 @@
                                 <img src="assets/images/right-top-arrow.svg" alt="right top arrow">
                             </div>
                         </div>
-                        <div class="p-2">
+                        <div class="">
                             <p class="syne font-semibold text-[26px]">FLORIDA JACKET</p>
-                            <p class="work-sans test-[14px] text-[#16161580]">Suffered alteration in some form,
+                            <p class="work-sans text-[14px] text-[#16161580] leading-[16px]">Suffered alteration in some form,
                                 bysuffalterattion in some forme, byinjected humor, or randomised</p>
-                            <p class="syne font-semibold text-[26px]">$100</p>
+                            <p class="syne font-semibold text-[26px] mt-2">$100</p>
                         </div>
                     </div>
-                    <div class="w-[350px] shrink-0">
+                    <div class="w-[310px] shrink-0">
                         <div class="relative  h-[350px]">
                             <img src="assets/images/newproduct-3.jpg" alt="product 1"
                                 class="w-full h-full object-cover">
@@ -182,14 +183,14 @@
                                 <img src="assets/images/right-top-arrow.svg" alt="right top arrow">
                             </div>
                         </div>
-                        <div class="p-2">
+                        <div class="">
                             <p class="syne font-semibold text-[26px]">FLORIDA JACKET</p>
-                            <p class="work-sans test-[14px] text-[#16161580]">Suffered alteration in some form,
+                            <p class="work-sans text-[14px] text-[#16161580] leading-[16px]">Suffered alteration in some form,
                                 bysuffalterattion in some forme, byinjected humor, or randomised</p>
-                            <p class="syne font-semibold text-[26px]">$100</p>
+                            <p class="syne font-semibold text-[26px] mt-2">$100</p>
                         </div>
                     </div>
-                    <div class="w-[350px] shrink-0">
+                    <div class="w-[310px] shrink-0">
                         <div class="relative  h-[350px]">
                             <img src="assets/images/newproduct-4.jpg" alt="product 1"
                                 class="w-full h-full object-cover">
@@ -197,11 +198,11 @@
                                 <img src="assets/images/right-top-arrow.svg" alt="right top arrow">
                             </div>
                         </div>
-                        <div class="p-2">
+                        <div class="">
                             <p class="syne font-semibold text-[26px]">FLORIDA JACKET</p>
-                            <p class="work-sans test-[14px] text-[#16161580]">Suffered alteration in some form,
+                            <p class="work-sans text-[14px] text-[#16161580] leading-[16px]">Suffered alteration in some form,
                                 bysuffalterattion in some forme, byinjected humor, or randomised</p>
-                            <p class="syne font-semibold text-[26px]">$100</p>
+                            <p class="syne font-semibold text-[26px] mt-2">$100</p>
                         </div>
                     </div>
                 </div>
@@ -229,7 +230,7 @@
                         </div>
                         <div class="p-2">
                             <p class="syne font-semibold text-[26px]">FLORIDA JACKET</p>
-                            <p class="work-sans test-[14px] text-gray-500">Suffered alteration in some form,
+                            <p class="work-sans text-[14px] text-[#16161580] leading-[16px]">Suffered alteration in some form,
                                 bysuffalterattion in some forme, byinjected humor, or randomised</p>
                             <p class="syne font-semibold text-[26px]">$100</p>
                         </div>
@@ -244,7 +245,7 @@
                         </div>
                         <div class="p-2">
                             <p class="syne font-semibold text-[26px]">FLORIDA JACKET</p>
-                            <p class="work-sans test-[14px] text-gray-500">Suffered alteration in some form,
+                            <p class="work-sans text-[14px] text-[#16161580] leading-[16px]">Suffered alteration in some form,
                                 bysuffalterattion in some forme, byinjected humor, or randomised</p>
                             <p class="syne font-semibold text-[26px]">$100</p>
                         </div>
@@ -259,7 +260,7 @@
                         </div>
                         <div class="p-2">
                             <p class="syne font-semibold text-[26px]">FLORIDA JACKET</p>
-                            <p class="work-sans test-[14px] text-gray-500">Suffered alteration in some form,
+                            <p class="work-sans text-[14px] text-[#16161580] leading-[16px]">Suffered alteration in some form,
                                 bysuffalterattion in some forme, byinjected humor, or randomised</p>
                             <p class="syne font-semibold text-[26px]">$100</p>
                         </div>
@@ -274,7 +275,7 @@
                         </div>
                         <div class="p-2">
                             <p class="syne font-semibold text-[26px]">FLORIDA JACKET</p>
-                            <p class="work-sans test-[14px] text-gray-500">Suffered alteration in some form,
+                            <p class="work-sans text-[14px] text-[#16161580] leading-[16px]">Suffered alteration in some form,
                                 bysuffalterattion in some forme, byinjected humor, or randomised</p>
                             <p class="syne font-semibold text-[26px]">$100</p>
                         </div>
@@ -289,7 +290,7 @@
                         </div>
                         <div class="p-2">
                             <p class="syne font-semibold text-[26px]">FLORIDA JACKET</p>
-                            <p class="work-sans test-[14px] text-gray-500">Suffered alteration in some form,
+                            <p class="work-sans text-[14px] text-[#16161580] leading-[16px]">Suffered alteration in some form,
                                 bysuffalterattion in some forme, byinjected humor, or randomised</p>
                             <p class="syne font-semibold text-[26px]">$100</p>
                         </div>
@@ -304,7 +305,7 @@
                         </div>
                         <div class="p-2">
                             <p class="syne font-semibold text-[26px]">FLORIDA JACKET</p>
-                            <p class="work-sans test-[14px] text-gray-500">Suffered alteration in some form,
+                            <p class="work-sans text-[14px] text-[#16161580] leading-[16px]">Suffered alteration in some form,
                                 bysuffalterattion in some forme, byinjected humor, or randomised</p>
                             <p class="syne font-semibold text-[26px]">$100</p>
                         </div>
@@ -319,7 +320,7 @@
                         </div>
                         <div class="p-2">
                             <p class="syne font-semibold text-[26px]">FLORIDA JACKET</p>
-                            <p class="work-sans test-[14px] text-gray-500">Suffered alteration in some form,
+                            <p class="work-sans text-[14px] text-[#16161580] leading-[16px]">Suffered alteration in some form,
                                 bysuffalterattion in some forme, byinjected humor, or randomised</p>
                             <p class="syne font-semibold text-[26px]">$100</p>
                         </div>
@@ -334,7 +335,7 @@
                         </div>
                         <div class="p-2">
                             <p class="syne font-semibold text-[26px]">FLORIDA JACKET</p>
-                            <p class="work-sans test-[14px] text-gray-500">Suffered alteration in some form,
+                            <p class="work-sans text-[14px] text-[#16161580] leading-[16px]">Suffered alteration in some form,
                                 bysuffalterattion in some forme, byinjected humor, or randomised</p>
                             <p class="syne font-semibold text-[26px]">$100</p>
                         </div>
