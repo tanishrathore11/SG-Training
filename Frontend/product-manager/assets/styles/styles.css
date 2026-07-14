@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+:root{
+    --primary-color: #03045E;
+    --secondary-color: #e6f3f8;
+    --text-secondary-color: #98E2F0;
+}
+
+/* Header */
+
+header {
+    background: var(--primary-color);
+    color: white;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+main {
+    display: flex;
+    flex: 1;
+}
+
+/* Sidebar */
+
+aside {
+    width: 300px;
+    background: white;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
+
+#form-section h2 {
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+label{
+    color: var(--primary-color);
+}
+
+#form-section form input, select, button{
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+#form-section form button{
+    color: var(--primary-color);
+    background: var(--secondary-color);
+    border: 1px solid rgba(176, 172, 172, 0.706);
+}
+
+#form-section form button:hover{
+    background: var(--primary-color);
+    color: white;
+    transition: all 0.3s ease;
+}
+
+/* Top Buttons */
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    padding: 6px;
+    font-weight: bold;
+}
+
+.buttons button {
+    appearance: none;
+    -webkit-appearance: none;
+    background: transparent;
+    border: none;
+
+    color: var(--primary-color);
+    flex: 1;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 8px;
+
+}
+
+.buttons button.active {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* Form */
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form select {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+form label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+form button {
+    margin-top: 15px;
+    padding: 12px;
+    cursor: pointer;
+}
+
+/* Content */
+
+.content {
+    flex: 1;
+    padding: 30px;
+}
+
+/* Title */
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.title span {
+    background: var(--primary-color);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+}
+
+#deleteCacheBtn {
+    background: rgb(202, 6, 6);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    /* display: flex;
+    align-items: center; */
+}
+
+/* Table */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th {
+    background: var(--primary-color);
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+td button {
+    padding: 6px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+}
