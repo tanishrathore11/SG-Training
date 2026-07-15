@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Manager</title>
     <link rel="stylesheet" href="assets/styles/styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
     <script src="assets/scripts/script.js" defer></script>
 </head>
 <body>
@@ -32,10 +33,7 @@
 
                     <label for="category" id="categoryLabel">Select Product</label>
                     <select name="category" id="category">
-                        <option value="">Select Category</option>
-                        <option value="electronics">Electronics</option>
-                        <option value="clothing">Clothing</option>
-                        <option value="books">Books</option>
+                        <option value="">Select Products</option>
                     </select>
 
                     <label for="title">Title</label>
@@ -56,7 +54,7 @@
                         id="stock"
                         placeholder="e.g. 10">
 
-                    <label for="sku">SKU</label>
+                    <label id="skuLabel" for="sku">SKU</label>
                     <input
                         type="text"
                         id="sku"
@@ -79,13 +77,13 @@
                 <h2>Product List</h2>
                 <div>
                     <button id="deleteCacheBtn">Delete Cache
-                        
+                        <i data-lucide="trash-2"></i>
                     </button>
-                    <span>3 Items</span>
+                    <span id="product-count">0 Items</span>
                 </div>
             </div>
 
-            <!-- <table>
+            <table>
 
                 <thead>
                     <tr>
@@ -100,33 +98,9 @@
 
                 <tbody>
 
-                    <tr>
-                        <td>1</td>
-                        <td>Nokia</td>
-                        <td>$49.99</td>
-                        <td>10</td>
-                        <td>NOK-001</td>
-                        <td>
-                            <button>Edit</button>
-                            <button>Delete</button>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>2</td>
-                        <td>Samsung</td>
-                        <td>$199.99</td>
-                        <td>5</td>
-                        <td>SAM-002</td>
-                        <td>
-                            <button>Edit</button>
-                            <button>Delete</button>
-                        </td>
-                    </tr>
-
                 </tbody>
 
-            </table> -->
+            </table>
 
         </section>
 

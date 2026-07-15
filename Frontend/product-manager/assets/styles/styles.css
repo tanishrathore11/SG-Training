@@ -20,7 +20,6 @@ body {
 }
 
 /* Header */
-
 header {
     background: var(--primary-color);
     color: white;
@@ -37,7 +36,6 @@ main {
 }
 
 /* Sidebar */
-
 aside {
     width: 300px;
     background: white;
@@ -72,7 +70,6 @@ label{
 }
 
 /* Top Buttons */
-
 .buttons {
     display: flex;
     gap: 10px;
@@ -103,7 +100,6 @@ label{
 }
 
 /* Form */
-
 form {
     display: flex;
     flex-direction: column;
@@ -132,14 +128,12 @@ form button {
 }
 
 /* Content */
-
 .content {
     flex: 1;
     padding: 30px;
 }
 
 /* Title */
-
 .title {
     display: flex;
     justify-content: space-between;
@@ -147,30 +141,50 @@ form button {
     margin-bottom: 20px;
 }
 
+.title h2 {
+    color: var(--primary-color);
+}
+
 .title span {
     background: var(--primary-color);
     color: white;
-    padding: 6px 12px;
-    border-radius: 20px;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+.title div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 #deleteCacheBtn {
-    background: rgb(202, 6, 6);
-    color: white;
-    border: none;
-    padding: 8px 12px;
+    color: rgb(202, 6, 6);
+    border: 1px solid rgb(202, 6, 6);
+    padding: 6px 12px;
     border-radius: 8px;
     cursor: pointer;
-    /* display: flex;
-    align-items: center; */
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    font-weight: bold;
+}
+
+#deleteCacheBtn:hover {
+    background: rgb(202, 6, 6);
+    color: white;
+    transition: all 0.3s ease;
 }
 
 /* Table */
-
 table {
     width: 100%;
+    table-layout: fixed;
     border-collapse: collapse;
     background: white;
+    border-radius: 6px;
+    overflow: hidden;
 }
 
 th {
@@ -181,7 +195,7 @@ th {
 }
 
 td {
-    padding: 12px;
+    padding: 10px;
     border-bottom: 1px solid #ddd;
 }
 
@@ -189,4 +203,28 @@ td button {
     padding: 6px 10px;
     margin-right: 5px;
     cursor: pointer;
+}
+
+td button:nth-child(2) {
+    color: rgb(202, 6, 6);
+}
+
+td button:hover {
+    background: var(--primary-color);
+    color: white;
+    transition: all 0.3s ease;
+}
+
+td button:nth-child(2):hover {
+    background: rgb(202, 6, 6);
+    color: white;
+}
+
+td button svg,
+#deleteCacheBtn svg {
+    width: 16px;
+    height: 16px;
+    stroke-width: 2;
+    vertical-align: middle;
+    margin: 2px;
 }
