@@ -26,7 +26,8 @@ let editingProductId = null;
 // Event Listeners
 // =======================
 category.addEventListener("change", (e)=>{
-    const selectedProductId = e.target.value;
+    const selectedProductId = Number(e.target.value);
+    editingProductId = selectedProductId;
     const selectedProduct = products.find(product => product.id == selectedProductId);
     updateButtons(selectedProduct);
 })
@@ -144,6 +145,26 @@ function updateButtons(product) {
     
 }
 
+const showSkeleton = () => {
+    const tbody = document.querySelector("table tbody");
+    tbody.innerHTML = "";
+
+    for (let i = 0; i < 10; i++) {
+        const row = document.createElement("tr");
+
+        row.innerHTML = `
+            <td><div class="skeleton"></div></td>
+            <td><div class="skeleton"></div></td>
+            <td><div class="skeleton"></div></td>
+            <td><div class="skeleton"></div></td>
+            <td><div class="skeleton"></div></td>
+            <td><div class="skeleton"></div></td>
+        `;
+
+        tbody.appendChild(row);
+    }
+};
+
 
 // =======================
 // Functions
@@ -161,6 +182,9 @@ const fetchProducts = async () => {
                 return;
             }
         }
+
+        showSkeleton();
+        await new Promise(resolve => setTimeout(resolve, 1500));
 
         const response = await fetch("https://dummyjson.com/products?limit=10&select=title,price,sku,stock");
         const data = await response.json();
@@ -231,4 +255,4 @@ deleteCacheBtn.addEventListener("click", deleteCache);
 updateButtons();
 lucide.createIcons();
 fetchProducts();
-renderProducts();
+// renderProducts();
